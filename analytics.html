@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Elzero</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="analytics.html">
+                        <i class="fa-solid fa-chart-line fa-fw"></i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type A Keyword" />
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="" />
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="p-relative">Analytics</h1>
+            <div class="analytics-page d-grid m-20 gap-20">
+                <!-- Start Key Metrics Widget -->
+                <div class="key-metrics p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Key Performance Metrics</h2>
+                    <div class="d-flex txt-c gap-20 f-wrap">
+                        <div class="box p-20 rad-10 fs-13 c-grey">
+                            <i class="fa-solid fa-users fa-2x mb-10 c-blue"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">15,245</span>
+                            Total Users
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-grey">
+                            <i class="fa-solid fa-cart-shopping fa-2x mb-10 c-green"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">1,876</span>
+                            Total Orders
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-grey">
+                            <i class="fa-solid fa-dollar-sign fa-2x mb-10 c-orange"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">$124,750</span>
+                            Revenue
+                        </div>
+                        <div class="box p-20 rad-10 fs-13 c-grey">
+                            <i class="fa-solid fa-rotate fa-2x mb-10 c-red"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-5">2.4%</span>
+                            Churn Rate
+                        </div>
+                    </div>
+                </div>
+                <!-- End Key Metrics Widget -->
+
+                <!-- Start User Growth Widget -->
+                <div class="user-growth p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">User Growth</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Monthly user acquisition for the past year</p>
+                    <div class="growth-chart p-relative">
+                        <div class="bars d-flex align-end h-full">
+                            <div class="bar bg-blue" style="height: 60%;" title="Jan: 1,245"></div>
+                            <div class="bar bg-blue" style="height: 70%;" title="Feb: 1,456"></div>
+                            <div class="bar bg-blue" style="height: 65%;" title="Mar: 1,345"></div>
+                            <div class="bar bg-blue" style="height: 80%;" title="Apr: 1,678"></div>
+                            <div class="bar bg-blue" style="height: 85%;" title="May: 1,789"></div>
+                            <div class="bar bg-blue" style="height: 75%;" title="Jun: 1,567"></div>
+                            <div class="bar bg-blue" style="height: 70%;" title="Jul: 1,456"></div>
+                            <div class="bar bg-blue" style="height: 90%;" title="Aug: 1,890"></div>
+                            <div class="bar bg-blue" style="height: 95%;" title="Sep: 1,978"></div>
+                            <div class="bar bg-blue" style="height: 85%;" title="Oct: 1,789"></div>
+                            <div class="bar bg-blue" style="height: 80%;" title="Nov: 1,678"></div>
+                            <div class="bar bg-blue" style="height: 100%;" title="Dec: 2,100"></div>
+                        </div>
+                        <div class="months d-flex justify-between mt-10 c-grey fs-13">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+                            <span>Sep</span>
+                            <span>Oct</span>
+                            <span>Nov</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User Growth Widget -->
+
+                <!-- Start Traffic Sources Widget -->
+                <div class="traffic-sources p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Traffic Sources</h2>
+                    <div class="sources">
+                        <div class="source mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <span class="fs-14 fw-bold">Organic Search</span>
+                                <span class="fs-13 c-grey">45%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-blue" style="width: 45%"></span>
+                            </div>
+                        </div>
+                        <div class="source mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <span class="fs-14 fw-bold">Direct Traffic</span>
+                                <span class="fs-13 c-grey">25%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-green" style="width: 25%"></span>
+                            </div>
+                        </div>
+                        <div class="source mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <span class="fs-14 fw-bold">Social Media</span>
+                                <span class="fs-13 c-grey">20%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-orange" style="width: 20%"></span>
+                            </div>
+                        </div>
+                        <div class="source">
+                            <div class="between-flex mb-10">
+                                <span class="fs-14 fw-bold">Referrals</span>
+                                <span class="fs-13 c-grey">10%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-red" style="width: 10%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Traffic Sources Widget -->
+
+                <!-- Start Device Usage Widget -->
+                <div class="device-usage p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Device Usage</h2>
+                    <div class="devices d-flex gap-20 f-wrap">
+                        <div class="device txt-c p-20 rad-10 flex-1">
+                            <i class="fa-solid fa-mobile-screen-button fa-3x mb-10 c-blue"></i>
+                            <h3 class="m-0 mb-5">Mobile</h3>
+                            <div class="fs-14 c-grey">65% of users</div>
+                            <div class="progress p-relative mt-15">
+                                <span class="bg-blue" style="width: 65%"></span>
+                            </div>
+                        </div>
+                        <div class="device txt-c p-20 rad-10 flex-1">
+                            <i class="fa-solid fa-desktop fa-3x mb-10 c-green"></i>
+                            <h3 class="m-0 mb-5">Desktop</h3>
+                            <div class="fs-14 c-grey">25% of users</div>
+                            <div class="progress p-relative mt-15">
+                                <span class="bg-green" style="width: 25%"></span>
+                            </div>
+                        </div>
+                        <div class="device txt-c p-20 rad-10 flex-1">
+                            <i class="fa-solid fa-tablet-screen-button fa-3x mb-10 c-orange"></i>
+                            <h3 class="m-0 mb-5">Tablet</h3>
+                            <div class="fs-14 c-grey">10% of users</div>
+                            <div class="progress p-relative mt-15">
+                                <span class="bg-orange" style="width: 10%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Device Usage Widget -->
+
+                <!-- Start Conversion Rates Widget -->
+                <div class="conversion-rates p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Conversion Rates</h2>
+                    <div class="rates">
+                        <div class="rate mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <div>
+                                    <span class="fs-14 fw-bold d-block">Homepage</span>
+                                    <span class="fs-13 c-grey">Visitors: 12,450</span>
+                                </div>
+                                <span class="fs-13 c-green">3.2%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-green" style="width: 3.2%"></span>
+                            </div>
+                        </div>
+                        <div class="rate mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <div>
+                                    <span class="fs-14 fw-bold d-block">Product Pages</span>
+                                    <span class="fs-13 c-grey">Visitors: 8,320</span>
+                                </div>
+                                <span class="fs-13 c-green">5.7%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-green" style="width: 5.7%"></span>
+                            </div>
+                        </div>
+                        <div class="rate mb-15 pb-15">
+                            <div class="between-flex mb-10">
+                                <div>
+                                    <span class="fs-14 fw-bold d-block">Checkout</span>
+                                    <span class="fs-13 c-grey">Visitors: 2,150</span>
+                                </div>
+                                <span class="fs-13 c-green">42.8%</span>
+                            </div>
+                            <div class="progress p-relative">
+                                <span class="bg-green" style="width: 42.8%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Conversion Rates Widget -->
+
+                <!-- Start Top Pages Widget -->
+                <div class="top-pages p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Top Performing Pages</h2>
+                    <div class="responsive-table">
+                        <table class="fs-15 w-full">
+                            <thead>
+                                <tr>
+                                    <td>Page URL</td>
+                                    <td>Views</td>
+                                    <td>Avg. Time</td>
+                                    <td>Bounce Rate</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>/homepage</td>
+                                    <td>12,450</td>
+                                    <td>2m 15s</td>
+                                    <td>32%</td>
+                                </tr>
+                                <tr>
+                                    <td>/products/featured</td>
+                                    <td>8,320</td>
+                                    <td>3m 44s</td>
+                                    <td>24%</td>
+                                </tr>
+                                <tr>
+                                    <td>/blog/top-10-tips</td>
+                                    <td>6,540</td>
+                                    <td>4m 20s</td>
+                                    <td>18%</td>
+                                </tr>
+                                <tr>
+                                    <td>/products/bestsellers</td>
+                                    <td>5,890</td>
+                                    <td>2m 58s</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <td>/contact</td>
+                                    <td>3,450</td>
+                                    <td>1m 45s</td>
+                                    <td>45%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Top Pages Widget -->
+
+                <!-- Start Geographic Distribution Widget -->
+                <div class="geographic p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Geographic Distribution</h2>
+                    <div class="countries">
+                        <div class="country between-flex mb-15 pb-15">
+                            <div class="d-flex align-center">
+                                <span class="fw-bold mr-10">🇺🇸</span>
+                                <span>United States</span>
+                            </div>
+                            <div class="d-flex align-center">
+                                <span class="c-grey mr-10">45%</span>
+                                <div class="progress w-100 p-relative">
+                                    <span class="bg-blue" style="width: 45%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country between-flex mb-15 pb-15">
+                            <div class="d-flex align-center">
+                                <span class="fw-bold mr-10">🇬🇧</span>
+                                <span>United Kingdom</span>
+                            </div>
+                            <div class="d-flex align-center">
+                                <span class="c-grey mr-10">15%</span>
+                                <div class="progress w-100 p-relative">
+                                    <span class="bg-blue" style="width: 15%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country between-flex mb-15 pb-15">
+                            <div class="d-flex align-center">
+                                <span class="fw-bold mr-10">🇩🇪</span>
+                                <span>Germany</span>
+                            </div>
+                            <div class="d-flex align-center">
+                                <span class="c-grey mr-10">12%</span>
+                                <div class="progress w-100 p-relative">
+                                    <span class="bg-blue" style="width: 12%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country between-flex mb-15 pb-15">
+                            <div class="d-flex align-center">
+                                <span class="fw-bold mr-10">🇫🇷</span>
+                                <span>France</span>
+                            </div>
+                            <div class="d-flex align-center">
+                                <span class="c-grey mr-10">8%</span>
+                                <div class="progress w-100 p-relative">
+                                    <span class="bg-blue" style="width: 8%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country between-flex">
+                            <div class="d-flex align-center">
+                                <span class="fw-bold mr-10">🌎</span>
+                                <span>Other Countries</span>
+                            </div>
+                            <div class="d-flex align-center">
+                                <span class="c-grey mr-10">20%</span>
+                                <div class="progress w-100 p-relative">
+                                    <span class="bg-blue" style="width: 20%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Geographic Distribution Widget -->
+
+                <!-- Start Real-time Activity Widget -->
+                <div class="real-time p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-20">Real-time Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item d-flex align-center pb-15 mb-15">
+                            <span class="key bg-green mr-15 d-block rad-half"></span>
+                            <div>
+                                <p class="m-0 fs-14">User <span class="fw-bold">John D.</span> completed a purchase of <span class="fw-bold">$129.99</span></p>
+                                <span class="c-grey fs-13">2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item d-flex align-center pb-15 mb-15">
+                            <span class="key bg-blue mr-15 d-block rad-half"></span>
+                            <div>
+                                <p class="m-0 fs-14">New user <span class="fw-bold">Sarah M.</span> registered</p>
+                                <span class="c-grey fs-13">5 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item d-flex align-center pb-15 mb-15">
+                            <span class="key bg-orange mr-15 d-block rad-half"></span>
+                            <div>
+                                <p class="m-0 fs-14">User <span class="fw-bold">Alex W.</span> added 3 items to cart</p>
+                                <span class="c-grey fs-13">8 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item d-flex align-center pb-15 mb-15">
+                            <span class="key bg-red mr-15 d-block rad-half"></span>
+                            <div>
+                                <p class="m-0 fs-14">User <span class="fw-bold">Michael T.</span> abandoned checkout</p>
+                                <span class="c-grey fs-13">12 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item d-flex align-center">
+                            <span class="key bg-green mr-15 d-block rad-half"></span>
+                            <div>
+                                <p class="m-0 fs-14">User <span class="fw-bold">Emma R.</span> completed a purchase of <span class="fw-bold">$75.50</span></p>
+                                <span class="c-grey fs-13">15 minutes ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Real-time Activity Widget -->
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Additional styles for analytics page */
+        .growth-chart {
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .growth-chart .bars {
+            height: 200px;
+            gap: 10px;
+            padding: 0 10px;
+        }
+        
+        .growth-chart .bar {
+            flex: 1;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .growth-chart .bar:hover {
+            opacity: 0.8;
+        }
+        
+        .justify-between {
+            justify-content: space-between;
+        }
+        
+        .flex-1 {
+            flex: 1;
+        }
+        
+        .w-100 {
+            width: 100px;
+        }
+        
+        .analytics-page .progress {
+            height: 8px;
+            background-color: #eee;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .analytics-page .progress > span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            border-radius: 6px;
+        }
+    </style>
+</body>
+
+</html>
