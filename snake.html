@@ -39,6 +39,7 @@
     <h1>Snake Game</h1>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div id="score">Score: 0</div>
+    <button id="restartBtn" style="margin-top:15px;padding:8px 18px;font-size:1em;background:#4caf50;color:#fff;border:none;border-radius:5px;cursor:pointer;">Restart</button>
     <div class="instructions">Use arrow keys to control the snake.</div>
     <script>
         const canvas = document.getElementById('gameCanvas');
@@ -141,6 +142,7 @@
             gameInterval = setInterval(draw, 100);
         }
 
+        document.getElementById('restartBtn').addEventListener('click', startGame);
         startGame();
     </script>
 </body>
