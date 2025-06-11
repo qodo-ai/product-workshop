@@ -583,6 +583,28 @@
             <!-- End Projects Table -->
         </div>
     </div>
+<script>
+  document.addEventListener('keydown', function(e) {
+    // Ignore if typing in an input, textarea, or contenteditable
+    const active = document.activeElement;
+    if (
+      active && (
+        active.tagName === 'INPUT' ||
+        active.tagName === 'TEXTAREA' ||
+        active.isContentEditable
+      )
+    ) {
+      return;
+    }
+    if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      const searchInput = document.querySelector('.head .search input[type="search"]');
+      if (searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    }
+  });
+</script>
 </body>
 
 </html>
