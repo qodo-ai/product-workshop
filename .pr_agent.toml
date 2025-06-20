@@ -1,0 +1,17 @@
+[pr_description]
+mode = "enhanced"
+include_sections = ["summary", "testing_instructions", "changelog"]
+
+[reviewer_recommendation]
+enabled = true
+strategy = "auto"
+
+[suggestions]
+enabled = true
+num_suggestions = 3
+
+[walkthrough]
+enabled = true
+
+[code_review]
+enabled = true

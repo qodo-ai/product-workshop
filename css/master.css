@@ -1451,3 +1451,107 @@ ul {
 @media (max-width: 600px) {
   .message { font-size: 14px; padding: 12px 32px 12px 12px; }
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #181a1b;
+  color: #e0e0e0;
+}
+.dark-mode .page {
+  background-color: #181a1b;
+}
+.dark-mode .sidebar {
+  background-color: #23272a;
+  box-shadow: 0 0 10px #111;
+}
+.dark-mode .sidebar ul li a,
+.dark-mode .sidebar ul li a.active,
+.dark-mode .sidebar ul li a:hover {
+  background-color: #23272a;
+  color: #e0e0e0;
+}
+.dark-mode .sidebar>h3,
+.dark-mode .sidebar ul li a span {
+  color: #e0e0e0;
+}
+.dark-mode .content {
+  background-color: #181a1b;
+}
+.dark-mode .head {
+  background-color: #23272a;
+  color: #e0e0e0;
+}
+.dark-mode .head .search input {
+  background-color: #23272a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+.dark-mode .head .search::before {
+  color: #aaa;
+}
+.dark-mode .wrapper .bg-white,
+.dark-mode .welcome,
+.dark-mode .quick-draft,
+.dark-mode .targets,
+.dark-mode .tickets,
+.dark-mode .latest-news,
+.dark-mode .tasks,
+.dark-mode .search-items,
+.dark-mode .latest-uploads,
+.dark-mode .last-project,
+.dark-mode .reminders,
+.dark-mode .latest-post,
+.dark-mode .social-media,
+.dark-mode .projects {
+  background-color: #23272a !important;
+  color: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.dark-mode .bg-eee,
+.dark-mode .btn-shape.bg-eee,
+.dark-mode .projects thead td {
+  background-color: #2c2f33 !important;
+  color: #e0e0e0 !important;
+}
+.dark-mode .c-black {
+  color: #e0e0e0 !important;
+}
+.dark-mode .c-grey {
+  color: #b0b0b0 !important;
+}
+.dark-mode .border,
+.dark-mode .welcome .body,
+.dark-mode .tasks .task-row:not(:last-of-type),
+.dark-mode .latest-news .news-row:not(:last-of-type),
+.dark-mode .latest-uploads ul li:not(:last-child),
+.dark-mode .projects tbody td,
+.dark-mode .projects table img,
+.dark-mode .profile-page .info-box .box,
+.dark-mode .profile-page .skills-card ul li:not(:last-child) {
+  border-color: #333 !important;
+}
+.dark-mode .projects tbody tr:hover td {
+  background-color: #23272a !important;
+}
+.dark-mode .toggle-switch {
+  background-color: #444;
+}
+.dark-mode .toggle-switch::before {
+  background-color: #23272a;
+  color: #aaa;
+}
+.dark-mode .toggle-checkbox:checked+.toggle-switch {
+  background-color: var(--blue-color);
+}
+.dark-mode .toggle-checkbox:checked+.toggle-switch::before {
+  color: var(--blue-color);
+}
+.dark-mode .message {
+  background: #23272a;
+  color: #e0e0e0;
+}
+.dark-mode .message.notice { background: var(--green-color); }
+.dark-mode .message.error { background: var(--red-color); }
+.dark-mode .message .close {
+  color: #e0e0e0;
+}

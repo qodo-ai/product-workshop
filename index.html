@@ -93,6 +93,9 @@
                     <input class="p-10" type="search" placeholder="Type A Keyword" />
                 </div>
                 <div class="icons d-flex align-center">
+                    <button id="darkModeToggle" title="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:20px;margin-right:15px;">
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
                     <span class="notification p-relative">
                         <i class="fa-regular fa-bell fa-lg"></i>
                     </span>
@@ -583,6 +586,28 @@
             <!-- End Projects Table -->
         </div>
     </div>
+<script>
+// Dark mode toggle logic
+const toggleBtn = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Load preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+  body.classList.add('dark-mode');
+}
+
+// Toggle handler
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+}
+</script>
 </body>
 
 </html>
