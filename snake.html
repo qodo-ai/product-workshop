@@ -37,6 +37,13 @@
 </head>
 <body>
     <h1>Snake Game</h1>
+    <label for="difficulty" style="margin-bottom:10px;">Difficulty: </label>
+    <select id="difficulty" style="margin-bottom:20px;">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="expert">Expert</option>
+    </select>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div id="score">Score: 0</div>
     <button id="restartBtn" style="margin-top:15px;padding:8px 18px;font-size:1em;background:#4caf50;color:#fff;border:none;border-radius:5px;cursor:pointer;">Restart</button>
@@ -52,7 +59,12 @@
         let score = 0;
         let gameInterval;
         let gameOver = false;
-
+        const difficultySpeeds = {
+            easy: 150,
+            medium: 100,
+            hard: 70,
+            expert: 40
+        };
         function randomFood() {
             return {
                 x: Math.floor(Math.random() * (canvasSize / box)) * box,
@@ -139,10 +151,13 @@
             document.getElementById('score').textContent = 'Score: 0';
             gameOver = false;
             clearInterval(gameInterval);
-            gameInterval = setInterval(draw, 100);
+            const difficulty = document.getElementById('difficulty').value;
+            const speed = difficultySpeeds[difficulty] || 100;
+            gameInterval = setInterval(draw, speed);
         }
 
         document.getElementById('restartBtn').addEventListener('click', startGame);
+        document.getElementById('difficulty').addEventListener('change', startGame);
         startGame();
     </script>
 </body>
